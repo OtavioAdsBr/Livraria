@@ -1,0 +1,138 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte descontraída e divertida */
+    background-color: #f9f9f9; /* Fundo claro e amigável */
+    color: #333;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ffeb3b; /* Amarelo vibrante para um toque alegre */
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    font-family: 'Pacifico', cursive; /* Fonte divertida e amigável */
+}
+
+.logo .tagline {
+    font-size: 1rem;
+    color: #f39c12; /* Laranja alegre para o tagline */
+    margin-top: 5px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #f39c12; /* Laranja chamativo para o efeito de hover */
+}
+
+/* Estilo para as seções */
+.section {
+    padding: 40px 10%;
+    text-align: center;
+    background-color: #fff3e0; /* Fundo suave e acolhedor */
+}
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category {
+    background-color: #ffeb3b; /* Amarelo vibrante */
+    border: 1px solid #f39c12; /* Bordas em tom de laranja */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.category p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffcc00; /* Amarelo mais intenso no hover */
+}
+
+/* Rodapé */
+.footer {
+    background-color: #ffeb3b;
+    color: #333;
+    text-align: center;
+    padding: 20px 10%;
+    font-size: 1rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centralização da sinopse */
+.book {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.book img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.book img:hover {
+    transform: scale(1.1);
+}
+
+/* Centraliza a sinopse */
+.synopsis {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+/* Efeito de hover no livro */
+.book:hover {
+    background-color: #ffecb3; /* Cor de fundo suave no hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(+8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
